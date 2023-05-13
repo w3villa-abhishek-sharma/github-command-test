@@ -1,37 +1,46 @@
-abhishek@abhishek-Latitude-7480:~$ cd Desktop/
-abhishek@abhishek-Latitude-7480:~/Desktop$ ls
-chat  github-doc.txt
-abhishek@abhishek-Latitude-7480:~/Desktop$ mkdir github-command-test
-abhishek@abhishek-Latitude-7480:~/Desktop$ cd github-command-test/
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git init
+1. git init
+
 Initialized empty Git repository in /home/abhishek/Desktop/github-command-test/.git/
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ touch > documentation.txt "Hello Word!"
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add .
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Testing of github commands"
+
+
+2. touch documentation.txt
+
+nano documentation.txt 
+
+<!-- Write the file in nano terminal -->
+Hello Word!
+This is a dummy file of documentation
+
+
+3. git add documentation.txt
+
+
+4. git commit -m "Testing of github commands"
+
 [master (root-commit) 67026e6] Testing of github commands
  2 files changed, 3 insertions(+)
  create mode 100644 Hello Word!
  create mode 100644 documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git remote add origin https://github.com/w3villa-abhishek-sharma/github-command-test.git
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master
-Username for 'https://github.com': w3villa-abhishek-sharma
-Password for 'https://w3villa-abhishek-sharma@github.com': 
-remote: Support for password authentication was removed on August 13, 2021.
-remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/'
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ Avisoni@123
-Avisoni@123: command not found
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master
-Username for 'https://github.com': w3villa-abhishek-sharma
-Password for 'https://w3villa-abhishek-sharma@github.com': 
-remote: Support for password authentication was removed on August 13, 2021.
-remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/'
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ code .
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git log
-commit c36503074cefe0cf2a8aa487d4c055461891fcd3 (HEAD -> master, origin/master)
+
+
+5. git remote add origin https://github.com/w3villa-abhishek-sharma/github-command-test.git
+
+
+
+6. git push origin master
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/w3villa-abhishek-sharma/github-command-test.git
+   c365030..c0d188b  master -> master
+
+
+7. git log
+
 Author: w3villa-abhishek-sharma <abhishek.sharma@w3villa.com>
 Date:   Sat May 13 13:40:00 2023 +0530
 
@@ -42,58 +51,45 @@ Author: w3villa-abhishek-sharma <abhishek.sharma@w3villa.com>
 Date:   Sat May 13 13:38:19 2023 +0530
 
     Testing of github commands
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git diff index.txt
-fatal: ambiguous argument 'index.txt': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions, like this:
-'git <command> [<revision>...] -- [<file>...]'
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git diff index
-fatal: ambiguous argument 'index': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions, like this:
-'git <command> [<revision>...] -- [<file>...]'
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano index.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ls
-documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
 
 
-Use "fg" to return to nano.
+8. nano documentation.txt 
 
-[1]+  Stopped                 nano documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
+<!-- Again Rewrite documentation file -->
+Hello Word!
+This is a dummy file of documentation
+Changed!!
 
 
-Use "fg" to return to nano.
+9. git add documentation.txt
 
-[2]+  Stopped                 nano documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add .
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit documentation.txt 
-Aborting commit due to empty commit message.
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add  documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Changed in documentaion"
+
+10. git commit -m "Changed in documentaion"
+
 [master c0d188b] Changed in documentaion
  1 file changed, 1 insertion(+), 1 deletion(-)
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push
-fatal: The current branch master has no upstream branch.
-To push the current branch and set the remote as upstream, use
 
-    git push --set-upstream origin master
 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master
-Username for 'https://github.com': w3villa-abhishek-sharma
-Password for 'https://w3villa-abhishek-sharma@github.com': 
-remote: Support for password authentication was removed on August 13, 2021.
-remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/'
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ logout
-There are stopped jobs.
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ code .
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status
+11. git push origin master
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 169.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/w3villa-abhishek-sharma/github-command-test.git
+   c0d188b..edddfdd  master -> master
+
+
+12. git status
+
 On branch master
 nothing to commit, working tree clean
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git log
+
+
+13. git log
+
 commit c0d188bb4de9210706c400fe7f81a3c88e619c1c (HEAD -> master, origin/master)
 Author: w3villa-abhishek-sharma <abhishek.sharma@w3villa.com>
 Date:   Sat May 13 14:12:06 2023 +0530
@@ -111,35 +107,25 @@ Author: w3villa-abhishek-sharma <abhishek.sharma@w3villa.com>
 Date:   Sat May 13 13:38:19 2023 +0530
 
     Testing of github commands
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Restore command testing"
-[master edddfdd] Restore command testing
- 1 file changed, 1 insertion(+)
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore c36503074cefe0cf2a8aa487d4c055461891fcd3
-error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore c36503074cefe0cf2a8aa487d4c055461891fcd3
-error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore documentation.txt  c36503074cefe0cf2a8aa487d4c055461891fcd3
-error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status
+
+
+14. git restore documentation.txt
+
+
+15. git status
+
 On branch master
 nothing to commit, working tree clean
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add .
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Changes"
-On branch master
-nothing to commit, working tree clean
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master
-Username for 'https://github.com': ^X^X^X^C
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git reset c36503074cefe0cf2a8aa487d4c055461891fcd3
+
+
+16. git reset c36503074cefe0cf2a8aa487d4c055461891fcd3
+
 Unstaged changes after reset:
 M	documentation.txt
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status
+
+
+17. git status
+
 On branch master
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -147,39 +133,36 @@ Changes not staged for commit:
 	modified:   documentation.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add documentation.txt 
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Done"
+
+
+18. git add documentation.txt
+
+
+19. git commit -m "Done"
+
 [master 149cb42] Done
  1 file changed, 2 insertions(+), 1 deletion(-)
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ 
 
 
-abhishek@abhishek-Latitude-7480:~cd Desktop/ abhishek@abhishek-Latitude-7480:~/DesktopcdDesktop/abhishek@abhishek−Latitude−7480: /Desktop ls chat github-doc.txt abhishek@abhishek-Latitude-7480:~/Desktop$ mkdir github-command-test abhishek@abhishek-Latitude-7480:~/Desktop$ cd github-command-test/ abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git init Initialized empty Git repository in /home/abhishek/Desktop/github-command-test/.git/ abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ touch > documentation.txt "Hello Word!" abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add . abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Testing of github commands" [master (root-commit) 67026e6] Testing of github commands 2 files changed, 3 insertions(+) create mode 100644 Hello Word! create mode 100644 documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git remote add origin https://github.com/w3villa-abhishek-sharma/github-command-test.git abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master Username for 'https://github.com': w3villa-abhishek-sharma Password for 'https://w3villa-abhishek-sharma@github.com': remote: Support for password authentication was removed on August 13, 2021. remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication. fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/' abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ Avisoni@123 Avisoni@123: command not found abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master Username for 'https://github.com': w3villa-abhishek-sharma Password for 'https://w3villa-abhishek-sharma@github.com': remote: Support for password authentication was removed on August 13, 2021. remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication. fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/' abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ code . abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git log commit c36503074cefe0cf2a8aa487d4c055461891fcd3 (HEAD -> master, origin/master) Author: w3villa-abhishek-sharma abhishek.sharma@w3villa.com Date: Sat May 13 13:40:00 2023 +0530
 
-Testing of github commands
-commit 67026e61d8836a253266216c02aa0348d17b98e3 Author: w3villa-abhishek-sharma abhishek.sharma@w3villa.com Date: Sat May 13 13:38:19 2023 +0530
+20. git push origin master
 
-Testing of github commands
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git diff index.txt fatal: ambiguous argument 'index.txt': unknown revision or path not in the working tree. Use '--' to separate paths from revisions, like this: 'git [...] -- [...]' abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git diff index fatal: ambiguous argument 'index': unknown revision or path not in the working tree. Use '--' to separate paths from revisions, like this: 'git [...] -- [...]' abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano index.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ls documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt
+To https://github.com/w3villa-abhishek-sharma/github-command-test.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/w3villa-abhishek-sharma/github-command-test.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-Use "fg" to return to nano.
 
-[1]+ Stopped nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt
+21. git push origin master -f
 
-Use "fg" to return to nano.
-
-[2]+ Stopped nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add . abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit documentation.txt Aborting commit due to empty commit message. abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Changed in documentaion" [master c0d188b] Changed in documentaion 1 file changed, 1 insertion(+), 1 deletion(-) abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push fatal: The current branch master has no upstream branch. To push the current branch and set the remote as upstream, use
-
-git push --set-upstream origin master
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master Username for 'https://github.com': w3villa-abhishek-sharma Password for 'https://w3villa-abhishek-sharma@github.com': remote: Support for password authentication was removed on August 13, 2021. remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication. fatal: Authentication failed for 'https://github.com/w3villa-abhishek-sharma/github-command-test.git/' abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ logout There are stopped jobs. abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ code . abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status On branch master nothing to commit, working tree clean abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git log commit c0d188bb4de9210706c400fe7f81a3c88e619c1c (HEAD -> master, origin/master) Author: w3villa-abhishek-sharma abhishek.sharma@w3villa.com Date: Sat May 13 14:12:06 2023 +0530
-
-Changed in documentaion
-commit c36503074cefe0cf2a8aa487d4c055461891fcd3 Author: w3villa-abhishek-sharma abhishek.sharma@w3villa.com Date: Sat May 13 13:40:00 2023 +0530
-
-Testing of github commands
-commit 67026e61d8836a253266216c02aa0348d17b98e3 Author: w3villa-abhishek-sharma abhishek.sharma@w3villa.com Date: Sat May 13 13:38:19 2023 +0530
-
-Testing of github commands
-abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Restore command testing" [master edddfdd] Restore command testing 1 file changed, 1 insertion(+) abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore c36503074cefe0cf2a8aa487d4c055461891fcd3 error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore c36503074cefe0cf2a8aa487d4c055461891fcd3 error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore documentation.txt c36503074cefe0cf2a8aa487d4c055461891fcd3 error: pathspec 'c36503074cefe0cf2a8aa487d4c055461891fcd3' did not match any file(s) known to git abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git restore documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status On branch master nothing to commit, working tree clean abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ nano documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add . abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Changes" On branch master nothing to commit, working tree clean abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git push origin master Username for 'https://github.com': ^X^X^X^C abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ ^C abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git reset c36503074cefe0cf2a8aa487d4c055461891fcd3 Unstaged changes after reset: M documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git status On branch master Changes not staged for commit: (use "git add ..." to update what will be committed) (use "git restore ..." to discard changes in working directory) modified: documentation.txt
-
-no changes added to commit (use "git add" and/or "git commit -a") abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git add documentation.txt abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$ git commit -m "Done" [master 149cb42] Done 1 file changed, 2 insertions(+), 1 deletion(-) abhishek@abhishek-Latitude-7480:~/Desktop/github-command-test$
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 163.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/w3villa-abhishek-sharma/github-command-test.git
+ + edddfdd...149cb42 master -> master (forced update)
